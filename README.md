@@ -26,4 +26,5 @@
 ## 🍄 Item List
 |   스터디날짜    | 주제 | 발표자 |    질문목록 |
 |:----------:|:---:|:----------:|:----------:|
-| 2023.11.19 | [챕터이름](https://github.com/Dev-Prison) | 발표자 | [Issue#1](https://github.com/Dev-Prison) |
+| 2023.11.19 | [ch1 : 개요](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/blob/main/yonghoon/ch1.%EA%B0%9C%EC%9A%94.md) | 이용훈 | [Issue#1](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/issues/2)|
+| 2023.11.26 | [~ ch2.2]() | 발표자 | [Issue#1]() |
