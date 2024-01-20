@@ -24,7 +24,7 @@
 
 
 ## 🍄 Item List
-|   스터디날짜    | 주제 | 발표자 &nbsp; |    질문목록 |
+| 스터디날짜 | 주제 | 발표자 | 질문목록 |
 |:----------|:---|:----------|:----------|
 | 2023.11.19 | [ch1 : 개요](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/blob/main/yonghoon/ch1.%EA%B0%9C%EC%9A%94.md) | 이용훈 | [Issue#1](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/issues/2)|
 | 2023.11.26 | [ch2.0-ch2.2: 캡슐화, 추상화, 상속, 다형성이 등장한 이유](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/blob/main/ynoolee/ch02/ch02.md) | 이연우 | [Issue#5](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/issues/5) |
