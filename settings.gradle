@@ -8,4 +8,6 @@
  */
 
 rootProject.name = 'The-Beauty-Of-Design-Patterns'
-include('app')
+include('ynoolee')
+include('yonghoon')
+include('sumi')
