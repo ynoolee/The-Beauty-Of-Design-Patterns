@@ -32,3 +32,4 @@
 | 2023.12.31 | [ch2.4.2-ch2.5 : 프로그래밍과 절차적 프로그래밍 / 객체지향 프로그래밍처럼 보이지만 실제로는 절차지향 프로그래밍](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/blob/main/ynoolee/ch02/ch2.4_2.5.md) | 이연우 | [Issue#10](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/issues/10) |
 | 2023.01.07 | [ch2.6-ch2.7.1 : 빈약한 도메인 모델에 기반한 전동적인 개발방식은 OOP를 위반하는가? / 추상클래스와 인터페이스](https://github.com/Dev-Prison/The-Beauty-Of-Design-Patterns/blob/main/yonghoon/ch2-6.md) | 이용훈 | ... |
 | 2023.01.21 | [ch3.1-ch3.3.2 : 단일 책임 원칙 ~ 리스코프 치환 원칙과 다형성의 차이점](https://kimsumi.notion.site/CH3-1-CH3-3-2-00b65efc453140ef9d938935671f11d7) | 김수미 | ... |
+| 2023.02.18 | [ch3.3.3-ch3.6.1 : 리스코프 치환 원칙을 위반하는 안티 패턴 ~ KISS 원칙의 정의와 해석](https://morning-paprika-8fa.notion.site/3-3-3-3-6-1-5d4bcc47093f4df1b38c66a00dc9b85f) | 김형욱 | ... |
