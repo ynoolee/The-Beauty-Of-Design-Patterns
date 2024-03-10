@@ -11,3 +11,4 @@ rootProject.name = 'The-Beauty-Of-Design-Patterns'
 include('ynoolee')
 include('yonghoon')
 include('sumi')
+include('hyoungwook')

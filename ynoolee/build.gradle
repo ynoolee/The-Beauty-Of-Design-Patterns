@@ -1,0 +1,11 @@
+plugins {
+    id 'checkstyle'
+}
+
+checkstyle {
+    toolVersion '8.40'
+    maxWarnings = 0 // 규칙이 어긋나는 코드가 하나라도 존재할 경우 build fail
+    // ynoolee 라는 하위 프로젝트 하위에 위치하는 config 디렉토리에 접근해야 하므로 ${rootDir} 가 아닌 ${projectDir} 을 사용
+    configFile = file("${projectDir}/config/checkstyle.xml") // 설정 파일 경로 지정
+    ignoreFailures false
+}
