@@ -15,17 +15,15 @@ public class Main {
         }
 
         // 비밀번호에 a !z, 0 ~9, "." 문자만 포함하는가
-        for (int i = 0; i < length ; i++ ) {
+        for (int i = 0; i < length; i++) {
             char c = password.charAt(i);
 
-            if (!((c >= 'a' && c <= 'z') || ( c >= '0' && c <= '9') || c == '.')) {
+            if (!((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == '.')) {
                 return false;
             }
         }
         return true;
     }
-
-
 
     private static class Stringutils {
         public static boolean isBlank(final String password) {

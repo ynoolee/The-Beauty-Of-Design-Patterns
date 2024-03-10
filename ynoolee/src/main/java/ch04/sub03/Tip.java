@@ -44,7 +44,7 @@ public class Tip {
             if (true) {
                 buyCourseForVip(1L, 2L);
             } else {
-                buyCourse(1L,2L);
+                buyCourse(1L, 2L);
             }
         }
 
