@@ -21,10 +21,12 @@ subprojects {
 
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+        testImplementation 'org.assertj:assertj-core:3.21.0' // Add AssertJ dependency
+        testImplementation 'org.junit.jupiter:junit-jupiter-params:5.4.2' // Parameterized Test
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     }
 
-    tasks.named('test') {
+    test {
         useJUnitPlatform()
     }
 }

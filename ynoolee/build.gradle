@@ -9,3 +9,7 @@ checkstyle {
     configFile = file("${projectDir}/config/checkstyle.xml") // 설정 파일 경로 지정
     ignoreFailures false
 }
+
+dependencies {
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.12'
+}
