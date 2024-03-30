@@ -33,3 +33,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: 'github-pr-check'
           tool_name: 'testtool'
+
+  if: always()  # 이전 단계의 실행 결과와 관계없이 항상 실행
+  steps:
+    - name: Check job status
+      if: ${{ failure() }}
+      run: exit 1
