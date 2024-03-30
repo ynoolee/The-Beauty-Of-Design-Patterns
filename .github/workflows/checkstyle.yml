@@ -23,12 +23,13 @@ jobs:
       - name: Run CheckStyle for specific module
         run: ./gradlew :ynoolee:check
         working-directory: ./
+        continue-on-error: true
 
       - name: Run reviewdog
-        if: always()
-        uses: nikitasavinov/checkstyle-action@master
-        with:
-          checkstyle_config: ynoolee/config/checkstyle.xml
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: 'github-pr-check'
-          tool_name: 'testtool'
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pip3 install --user -U reviewdog
+          export PATH="$HOME/.local/bin:$PATH"
+          ls -al A/build/reports/checkstyle/  # 결과 파일 확인
+          reviewdog -reporter=github-pr-review -f=checkstyle -diff="git diff HEAD^" -fail-on-error -name="Module Checkstyle Results" -filter-mode=nofilter ynoolee/build/reports/checkstyle/main.xml ynoolee/build/reports/checkstyle/test.xml
