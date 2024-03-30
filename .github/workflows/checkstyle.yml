@@ -29,4 +29,6 @@ jobs:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip3 install --user -U reviewdog
+          export PATH="$HOME/.local/bin:$PATH"
+          ls -al A/build/reports/checkstyle/  # 결과 파일 확인
           reviewdog -reporter=github-pr-review -f=checkstyle -diff="git diff HEAD^" -fail-on-error -name="Module Checkstyle Results" -filter-mode=nofilter ynoolee/build/reports/checkstyle/main.xml ynoolee/build/reports/checkstyle/test.xml
