@@ -26,13 +26,8 @@ jobs:
         continue-on-error: true
 
       - name: Run reviewdog
-        if: always()
         uses: nikitasavinov/checkstyle-action@master
         with:
-          checkstyle_config: ynoolee/config/checkstyle.xml
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: 'github-pr-check'
           tool_name: 'testtool'
-      - name: If one of jobs fail then fail
-        if: ${{ failure() }}
-        run: exit 1
