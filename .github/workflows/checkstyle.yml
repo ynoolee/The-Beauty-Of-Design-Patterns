@@ -25,6 +25,7 @@ jobs:
         working-directory: ./
 
       - name: Run reviewdog
+        if: always()
         uses: nikitasavinov/checkstyle-action@master
         with:
           checkstyle_config: ynoolee/config/checkstyle.xml
