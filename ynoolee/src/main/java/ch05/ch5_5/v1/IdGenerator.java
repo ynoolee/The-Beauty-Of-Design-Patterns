@@ -1,6 +1,5 @@
 package ch05.ch5_5.v1;
 
-
 import ch05.ch5_5.v2.IdGeneratorV2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,21 +17,21 @@ public class IdGenerator {
             String hostName = InetAddress.getLocalHost().getHostName();
             String[] tokens = hostName.split("\\.");
             if (tokens.length > 0) {
-                hostName = tokens[tokens.length -1];
+                hostName = tokens[tokens.length - 1];
             }
             char[] randomChars = new char[8];
             int count = 0;
             Random random = new Random();
-            while(count < 8) {
+            while (count < 8) {
                 int randomAscii = random.nextInt(122);
                 if (randomAscii >= 48 && randomAscii <= 57) {
-                    randomChars[count] = (char)('0' + (randomAscii - 48));
+                    randomChars[count] = (char) ('0' + (randomAscii - 48));
                     count++;
-                } else if(randomAscii >= 65 && randomAscii <=90) {
-                    randomChars[count] = (char)('A' + (randomAscii-65));
+                } else if (randomAscii >= 65 && randomAscii <= 90) {
+                    randomChars[count] = (char) ('A' + (randomAscii - 65));
                     count++;
-                } else if(randomAscii >= 97 && randomAscii <= 122) {
-                    randomChars[count] = (char)('a' + (randomAscii - 97));
+                } else if (randomAscii >= 97 && randomAscii <= 122) {
+                    randomChars[count] = (char) ('a' + (randomAscii - 97));
                     count++;
                 }
             }

@@ -8,7 +8,11 @@
  */
 
 rootProject.name = 'The-Beauty-Of-Design-Patterns'
-include('ynoolee')
-include('yonghoon')
-include('sumi')
-include('hyoungwook')
+include(
+        'ynoolee',
+        'yonghoon',
+        'sumi',
+        'hyoungwook'
+)
+
+// checkme 왠지 JavaPluginConvention 관련된 것들은 settings.gradle 에서 관리 가능할 것 같은데
