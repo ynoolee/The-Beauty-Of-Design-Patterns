@@ -41,7 +41,6 @@ class IdGeneratorV3ImplTest {
         }
     }
 
-
     @ParameterizedTest
     @DisplayName("주어진 길이의 랜덤문자열을 생성한다")
     @ValueSource(ints = {3, 4, 5})
