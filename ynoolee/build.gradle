@@ -12,4 +12,5 @@ checkstyle {
 
 dependencies {
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.12'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.3.0'
 }
