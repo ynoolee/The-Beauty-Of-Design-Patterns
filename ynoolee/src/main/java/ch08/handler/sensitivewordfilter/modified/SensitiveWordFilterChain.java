@@ -12,7 +12,7 @@ public class SensitiveWordFilterChain {
 
     public boolean filter(Content content) {
         for (SensitiveWordFilter filter : filters) {
-            if(!filter.doFilter(content)) {
+            if (!filter.doFilter(content)) {
                 return false;
             }
         }

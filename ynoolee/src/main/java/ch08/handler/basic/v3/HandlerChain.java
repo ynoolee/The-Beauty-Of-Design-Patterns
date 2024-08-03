@@ -13,7 +13,7 @@ public class HandlerChain {
     public void handle() {
         for (Handler handler : handlers) {
             final boolean handled = handler.handle();
-            if(handled) {
+            if (handled) {
                 break;
             }
         }

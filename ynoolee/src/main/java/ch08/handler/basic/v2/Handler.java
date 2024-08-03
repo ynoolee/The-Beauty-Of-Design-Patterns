@@ -9,7 +9,7 @@ public abstract class Handler {
 
     public final void handle() {
         boolean handled = doHandle();
-        if(!handled && successor != null) {
+        if (!handled && successor != null) {
             successor.handle();
         }
     }

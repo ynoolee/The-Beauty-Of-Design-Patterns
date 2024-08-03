@@ -9,7 +9,7 @@ public abstract class Handler {
 
     public final void handle() {
         doHandle();
-        if(successor != null) { // doHandle() 의 결과와 상관없이 다음 프로세서를 호출
+        if (successor != null) { // doHandle() 의 결과와 상관없이 다음 프로세서를 호출
             successor.handle();
         }
     }

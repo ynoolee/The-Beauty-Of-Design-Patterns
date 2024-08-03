@@ -23,8 +23,8 @@ public class ConstructorArg {
             this.arg = arg;
         }
 
-        public ConstructorArgBuilder isRef(boolean yN) {
-            this.isRef = yN;
+        public ConstructorArgBuilder isRef(boolean yn) {
+            this.isRef = yn;
             return this;
         }
 
@@ -39,13 +39,13 @@ public class ConstructorArg {
         }
 
         public ConstructorArg build() {
-            if(isRef) {
-                if(arg != null) {
+            if (isRef) {
+                if (arg != null) {
                     throw new IllegalArgumentException("isRef 가 true 면 arg 는 null 이어야 합니다");
                 }
             }
 
-            if(arg == null || type == null) {
+            if (arg == null || type == null) {
                 throw new IllegalArgumentException("isRef 가 false 면 arg 와 type 은 null 이 올 수 없습니다");
             }
 

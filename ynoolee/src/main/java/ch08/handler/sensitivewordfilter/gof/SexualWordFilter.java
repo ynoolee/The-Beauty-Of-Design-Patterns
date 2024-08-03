@@ -1,6 +1,6 @@
 package ch08.handler.sensitivewordfilter.gof;
 
-public class SexualWordFilter implements SensitiveWordFilter{
+public class SexualWordFilter implements SensitiveWordFilter {
     @Override
     public boolean doFilter(final Content content) {
         boolean legal = true;

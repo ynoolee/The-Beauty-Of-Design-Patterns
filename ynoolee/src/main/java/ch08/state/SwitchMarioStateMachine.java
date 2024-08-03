@@ -9,7 +9,6 @@ public class SwitchMarioStateMachine {
         this.currentState = State.SMALL;
     }
 
-
     public void obtainMushRoom() {
         if (State.SMALL.equals(currentState)) {
             this.currentState = State.SUPER;
