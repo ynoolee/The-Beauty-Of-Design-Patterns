@@ -2,10 +2,10 @@ package ch07.decorator.v2;
 
 public class SuperPowerA extends A {
 
-    protected A a;
+    protected A target;
 
-    public SuperPowerA(final A a) {
-        this.a = a;
+    public SuperPowerA(final A target) {
+        this.target = target;
     }
 
     public void superPowerUp() {
@@ -14,6 +14,6 @@ public class SuperPowerA extends A {
 
     @Override
     protected String eat() {
-        return a.eat();
+        return target.eat();
     }
 }

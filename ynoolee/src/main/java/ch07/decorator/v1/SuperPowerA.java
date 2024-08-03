@@ -2,10 +2,10 @@ package ch07.decorator.v1;
 
 public class SuperPowerA extends A {
 
-    protected A a;
+    protected A target;
 
-    public SuperPowerA(final A a) {
-        this.a = a;
+    public SuperPowerA(final A target) {
+        this.target = target;
     }
 
     public void superPowerUp() {

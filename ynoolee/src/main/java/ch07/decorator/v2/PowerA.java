@@ -2,10 +2,10 @@ package ch07.decorator.v2;
 
 public class PowerA extends A {
 
-    protected A a;
+    protected A target;
 
-    public PowerA(final A a) {
-        this.a = a;
+    public PowerA(final A target) {
+        this.target = target;
     }
 
     public void power() {

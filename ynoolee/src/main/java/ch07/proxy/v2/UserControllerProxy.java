@@ -4,7 +4,7 @@ import ch07.proxy.dto.RequestInfo;
 import ch07.proxy.dto.UserVo;
 import ch07.proxy.v1.MetricsCollector;
 
-public class UserControllerProxy implements IUserController{
+public class UserControllerProxy implements IUserController {
 
     private final MetricsCollector metricsCollector;
     private final UserController userController; // 원본 클래스
@@ -19,7 +19,7 @@ public class UserControllerProxy implements IUserController{
     public UserVo login(final String telephone, final String password) {
         long startTimestamp = System.currentTimeMillis();
 
-        UserVo userVo = userController.login(telephone,password); // 원본 클래스에 위임
+        UserVo userVo = userController.login(telephone, password); // 원본 클래스에 위임
 
         long endTimeStamp = System.currentTimeMillis();
         long responseTime = endTimeStamp - startTimestamp;
@@ -33,7 +33,7 @@ public class UserControllerProxy implements IUserController{
     public UserVo register(final String telephone, final String password) {
         long startTimestamp = System.currentTimeMillis();
 
-        UserVo userVo = userController.register(telephone,password); // 원본 클래스에 위임
+        UserVo userVo = userController.register(telephone, password); // 원본 클래스에 위임
 
         long endTimeStamp = System.currentTimeMillis();
         long responseTime = endTimeStamp - startTimestamp;
